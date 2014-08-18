@@ -138,11 +138,6 @@ public class Withdraw extends Action {
 			break;
 		}
 
-		for (final String inventoryResource : skillManager
-				.getInventoryResources())
-			if (Inventory.find(inventoryResource).length < 1)
-				return;
-
 		if (!Banking.close())
 			return;
 		if (!Timing.waitCondition(new Condition() {
