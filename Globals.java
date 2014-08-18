@@ -170,7 +170,7 @@ public enum Globals {
 
 		@Override
 		public boolean getStatus() {
-			return STRING_BOW.getStatus() && Interfaces.get(309) == null;
+			return STRING_BOW.getStatus();
 		};
 	
 	};
